@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		393787111F18C2570086E618 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393787101F18C2570086E618 /* Card.swift */; };
 		39B7FA101F14B8C2009B226B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B7FA0F1F14B8C2009B226B /* AppDelegate.swift */; };
 		39B7FA121F14B8C2009B226B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39B7FA111F14B8C2009B226B /* ViewController.swift */; };
 		39B7FA151F14B8C2009B226B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39B7FA131F14B8C2009B226B /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		393787101F18C2570086E618 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		39B7FA0C1F14B8C2009B226B /* CardWar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardWar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		39B7FA0F1F14B8C2009B226B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		39B7FA111F14B8C2009B226B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +37,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3937870D1F18C0BC0086E618 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				39B7FA111F14B8C2009B226B /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3937870E1F18C0D10086E618 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				393787101F18C2570086E618 /* Card.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		39B7FA031F14B8C2009B226B = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +72,9 @@
 		39B7FA0E1F14B8C2009B226B /* CardWar */ = {
 			isa = PBXGroup;
 			children = (
+				3937870E1F18C0D10086E618 /* Model */,
+				3937870D1F18C0BC0086E618 /* Controller */,
 				39B7FA0F1F14B8C2009B226B /* AppDelegate.swift */,
-				39B7FA111F14B8C2009B226B /* ViewController.swift */,
 				39B7FA131F14B8C2009B226B /* Main.storyboard */,
 				39B7FA161F14B8C2009B226B /* Assets.xcassets */,
 				39B7FA181F14B8C2009B226B /* LaunchScreen.storyboard */,
@@ -137,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				39B7FA121F14B8C2009B226B /* ViewController.swift in Sources */,
+				393787111F18C2570086E618 /* Card.swift in Sources */,
 				39B7FA101F14B8C2009B226B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +319,7 @@
 				39B7FA201F14B8C2009B226B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
