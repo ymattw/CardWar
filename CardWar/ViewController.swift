@@ -47,4 +47,14 @@ class ViewController: UIViewController {
             rightScoreLabel.text = String(rightScore)
         }
     }
+
+    @IBAction func resetDeal(_ sender: Any) {
+        leftScore = 0
+        leftScoreLabel.text = String(leftScore)
+        leftImageView.image = UIImage(named: "back")
+
+        rightScore = 0
+        rightScoreLabel.text = String(rightScore)
+        rightImageView.image = UIImage(named: "back")
+    }
 }
