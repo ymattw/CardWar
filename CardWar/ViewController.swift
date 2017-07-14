@@ -50,11 +50,11 @@ class ViewController: UIViewController {
 
     @IBAction func resetDeal(_ sender: Any) {
         leftScore = 0
-        leftScoreLabel.text = String(leftScore)
+        leftScoreLabel.text = "0"
         leftImageView.image = UIImage(named: "back")
 
         rightScore = 0
-        rightScoreLabel.text = String(rightScore)
+        rightScoreLabel.text = "0"
         rightImageView.image = UIImage(named: "back")
     }
 }
