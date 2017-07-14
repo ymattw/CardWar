@@ -91,13 +91,25 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qTr-Ry-MSh" userLabel="DealButton">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="c4C-r0-gZ9" userLabel="ButtonStackView">
                                         <rect key="frame" x="130.5" y="395.5" width="82" height="251.5"/>
-                                        <state key="normal" image="dealbutton"/>
-                                        <connections>
-                                            <action selector="makeDeal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xjr-aH-V7b"/>
-                                        </connections>
-                                    </button>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qTr-Ry-MSh" userLabel="DealButton">
+                                                <rect key="frame" x="0.0" y="0.0" width="82" height="126"/>
+                                                <state key="normal" image="dealbutton"/>
+                                                <connections>
+                                                    <action selector="makeDeal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xjr-aH-V7b"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEN-aS-N2i">
+                                                <rect key="frame" x="9" y="126" width="64" height="125.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                <state key="normal" title="Reset">
+                                                    <color key="titleColor" cocoaTouchSystemColor="lightTextColor"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
